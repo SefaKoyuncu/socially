@@ -1,4 +1,4 @@
-package com.example.socially;
+package com.example.socially.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -11,6 +11,8 @@ import android.text.Html;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.socially.R;
+import com.example.socially.adapters.ViewPagerAdapter;
 import com.example.socially.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {

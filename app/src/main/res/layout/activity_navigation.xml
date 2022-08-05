@@ -8,54 +8,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
-
-            android:id="@+id/coordinatorLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:translationZ="90dp"
+            android:background="#E1F6F4"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_background"
+            android:visibility="invisible"
+            app:itemTextColor="#7DB9B3"
+            app:labelVisibilityMode="unlabeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:context=".NavigationActivity">
-
-            <com.google.android.material.bottomappbar.BottomAppBar
-                android:id="@+id/bottomAppBar2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:backgroundTint="#00FFFFFF"
-                app:backgroundTint="#00FFFFFF"
-                app:elevation="0dp"
-                app:fabCradleMargin="10dp"
-                app:fabCradleRoundedCornerRadius="60dp"
-                app:fabCradleVerticalOffset="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent">
-
-                <com.google.android.material.bottomnavigation.BottomNavigationView
-                    android:id="@+id/bottomNavigationView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="16dp"
-                    android:background="@drawable/transparent_background"
-                    app:itemTextColor="#7DB9B3"
-                    app:labelVisibilityMode="unlabeled"
-                    app:menu="@menu/bottom_nav_menu" />
-
-            </com.google.android.material.bottomappbar.BottomAppBar>
-
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            app:menu="@menu/bottom_nav_menu" />
 
         <FrameLayout
             android:id="@+id/fragmentHold"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout2"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -67,14 +48,14 @@
 
             android:id="@+id/coordinatorLayout"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="88dp"
             android:background="#FFFFFF"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            tools:context=".NavigationActivity">
+            tools:context=".activities.NavigationActivity">
 
             <com.google.android.material.bottomappbar.BottomAppBar
                 android:id="@+id/bottomAppBar"
@@ -84,9 +65,9 @@
                 android:backgroundTint="#00FFFFFF"
                 app:backgroundTint="#00FFFFFF"
                 app:elevation="0dp"
-                app:fabCradleMargin="10dp"
-                app:fabCradleRoundedCornerRadius="60dp"
-                app:fabCradleVerticalOffset="10dp"
+                app:fabCradleMargin="30dp"
+                app:fabCradleRoundedCornerRadius="30dp"
+                app:fabCradleVerticalOffset="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"

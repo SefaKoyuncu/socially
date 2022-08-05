@@ -1,4 +1,4 @@
-package com.example.socially;
+package com.example.socially.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.socially.R;
 import com.example.socially.databinding.ActivityNavigationBinding;
 import com.example.socially.fragments.ChatPageFragment;
 import com.example.socially.fragments.FavPageFragment;
@@ -35,6 +36,9 @@ public class NavigationActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_navigation);
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
+        binding.bottomAppBar.setVisibility(View.VISIBLE);
+        binding.view.setVisibility(View.GONE);
+
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentHold,new MainPageFragment()).commit();
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -49,6 +53,9 @@ public class NavigationActivity extends AppCompatActivity {
                         break;
                     case R.id.chatPageFragment:
                         fragment=new ChatPageFragment();
+                        binding.bottomAppBar.setVisibility(View.GONE);
+                        binding.view.setVisibility(View.VISIBLE);
+
                         break;
                     case R.id.favPageFragment:
                         fragment=new FavPageFragment();
