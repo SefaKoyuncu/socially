@@ -24,14 +24,14 @@ public class ChatPageFragment extends Fragment {
     private MessageAdapter messageAdapter;
     private ArrayList<Messages> filteredlist = new ArrayList<>();
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_chat_page,container, false);
 
-        binding.imageViewBack.setOnClickListener(new View.OnClickListener() {
+        binding.imageViewBack.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View view)
             {
