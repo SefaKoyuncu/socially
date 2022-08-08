@@ -31,7 +31,7 @@
 -RecyclerView with different size cardview. 
 
 <br />
-<img src="images/Android_logo.png" width="100" height="100"><a id="raw-url" href="https://raw.githubusercontent.com/SefaKoyuncu/socially/mastersocially.apk">Download APK Here</a>
+<img src="images/Android_logo.png" width="100" height="100"><a id="raw-url" href="https://raw.githubusercontent.com/SefaKoyuncu/socially/master/socially.apk">Download APK Here</a>
 
 ------------
 #### Screenshots
