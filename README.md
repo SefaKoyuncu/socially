@@ -1,4 +1,4 @@
-# socially
+# Socially
 
 ### Project Information
 
