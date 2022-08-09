@@ -21,6 +21,8 @@
 -Firebase
   - Crashlytics
   - Analytics
+  
+-DataBinding  
  
 -SharedPreferences
 
